@@ -1,0 +1,11 @@
+{
+  "name": "grandlux-barbershop",
+  "version": "1.0.0",
+  "description": "Grand Lux Salon & Barbery Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Soler",
+  "license": "MIT"
+}
