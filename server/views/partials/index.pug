@@ -1,40 +1,95 @@
 extends ../layout.pug
 
 block content
+    style.
+        img {
+            -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(80%);
+        }
+
     .container-fluid
-        h2.page-header Header
+        header
+            h2.page-header Header
+            img(src="http://www.thestandardbarbershop.com/wp-content/uploads/2017/04/2-3.jpg", alt="Header image", width="100%")
+            h2 Grand Lux
+            h4 Salon & Barbery
 
-        img(src="http://www.thestandardbarbershop.com/wp-content/uploads/2017/04/2-3.jpg", alt="Header image")
-        h2 Grand Lux
-        h4 Salon & Barbery
+            h2.page-header Social Media
+            ul
+                li: a(href="#") Facebook
+                li: a(href="#") Instagram
+                li: a(href="#") Twitter
 
-        h2.page-header Social Media
-        ul
-            li: a(href="#") Facebook
-            li: a(href="#") Instagram
-            li: a(href="#") Twitter
+        section.container
+            h2.page-header About
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, voluptates corrupti accusantium repellat modi voluptatibus aut odio aliquid praesentium. Suscipit, eius nisi quasi et dolore ipsam, enim alias excepturi amet eveniet corporis nihil ab quo voluptatibus molestias, expedita exercitationem quisquam adipisci officiis est nulla. Soluta ducimus sunt dolorum quas dignissimos debitis. Est delectus magni optio quos quis eligendi. Accusantium temporibus, facere facilis dolor sunt tempora nisi commodi provident vel, aspernatur reiciendis omnis vitae unde exercitationem eum consequuntur sequi et doloribus maxime minus ipsam delectus. Itaque nam quaerat et laborum adipisci reprehenderit, magnam quod sunt ipsum libero, atque assumenda quisquam expedita.
 
-        h2.page-header About
-        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, voluptates corrupti accusantium repellat modi voluptatibus aut odio aliquid praesentium. Suscipit, eius nisi quasi et dolore ipsam, enim alias excepturi amet eveniet corporis nihil ab quo voluptatibus molestias, expedita exercitationem quisquam adipisci officiis est nulla. Soluta ducimus sunt dolorum quas dignissimos debitis. Est delectus magni optio quos quis eligendi. Accusantium temporibus, facere facilis dolor sunt tempora nisi commodi provident vel, aspernatur reiciendis omnis vitae unde exercitationem eum consequuntur sequi et doloribus maxime minus ipsam delectus. Itaque nam quaerat et laborum adipisci reprehenderit, magnam quod sunt ipsum libero, atque assumenda quisquam expedita.
+        section.container
+            h2.page-header Team
+            .row
+                .col-md-6
+                    .panel.panel-default
+                        .panel-body
+                            img.img-responsive(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
+                            h3: strong Joe Doe
+                            span Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
+                        .panel-body
+                            a(href="#") View Gallery
+                .col-md-6
+                    .panel.panel-default
+                        .panel-body
+                            img.img-responsive(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
+                            h3: strong Joe Doe
+                            span Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
+                        .panel-body
+                            a(href="#") View Gallery
 
-        h2.page-header Barbers
-        img(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format")
-        h3
-            strong Joe
-            span Doe
-        span 4 year experiences
+        section.container
+            h2.page-header Gallery
+            .row
+                .col-md-4
+                    img.img-responsive(src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg", width="100%")
+                .col-md-4
+                    img.img-responsive(src="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg", width="100%")
+                .col-md-4
+                    img.img-responsive(src="https://i1.wp.com/therighthairstyles.com/wp-content/uploads/2014/05/3-low-fade-with-facial-hairstyle.jpg?w=500&ssl=1", width="100%")
 
-        h2.page-header Services & Prices
-        ul
-            li Haircut: $60
-            li Fade: $90
+        section.container
+            h2.page-header Services & Prices
+            ul
+                li Haircut: $60
+                li Fade: $90
 
-        h2.page-header Schedule
-        strong Tuesday-Friday 9am-6pm
-        br
-        strong Saturday: 9am-3pm
-        br
-        strong Sunday-Monday: Close
+        section.container
+            h2.page-header Hours
+            strong Tuesday-Friday 9am-6pm
+            br
+            strong Saturday: 9am-3pm
+            br
+            strong Sunday-Monday: Close
 
-        br
-        br
+        section.container
+            h2.page-header Location
+            address
+                strong Grand Lux Salon & Barbery
+                br
+                span 3616 N Fry Rd #160
+                br
+                span Katy, TX 77449
+                br
+                abbr(title="Phone") P: (832) 321-3776
+
+            address
+                strong Joe Doe
+                br
+                a(href="mailto:#") example@example.com
+        
+        section.container
+            iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
+
+        section.container
+            h2.page-header Footer
+            ul
+                li All Right Reserved
+                li Designed By: 
+                    a(href="http://keypunchers.io/") Keypunchers.io
