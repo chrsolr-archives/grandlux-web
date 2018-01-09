@@ -2,11 +2,12 @@ extends ../layout.pug
 
 block content
 
-    header.header
+    header.header.vh-100
         .header-bg-image(style="background-image: url(https://moviewriternyu.files.wordpress.com/2017/07/barber-shop.jpg)")
         .content
-            span.text-uppercase Grand Lux
-            span Salon & Barbery
+            img.logo(src="http://dev.localbarber.nz/wp-content/uploads/2015/11/The-Local-Barbershop-logo-large_grey_mid.png", width="200px")
+            span.title.mt-2.text-uppercase Grand Lux
+            span.subtitle Salon & Barbery
 
     section.container
         .my-5(data-aos="fade")
@@ -81,22 +82,24 @@ block content
                         a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
                             img.img-fluid(src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
 
-    section.container
-        .my-5(data-aos="fade")
-            h2.display-4.text-center.text-lowercase.mb-5 Services & Prices
-            .row.text-center
-                .col-sm-6
-                    h5 Prices
-                    ul.list-unstyled
-                        li Clean Cut: $60
-                        li Close Shaves: $90
-                        li Beard Trims: $90
-                .col-sm-6
-                    h5 Hours
-                    ul.list-unstyled
-                        li Tuesday-Friday 9am-6pm
-                        li Saturday: 9am-3pm
-                        li Sunday-Monday: Close
+    section.header.vh-50
+        .header-bg-image(style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
+        .content
+            .my-5(data-aos="fade")
+                h2.display-4.text-center.text-lowercase.mb-5 Services & Prices
+                .row.text-center
+                    .col-sm-6
+                        h5 Prices
+                        ul.list-unstyled
+                            li Clean Cut: $60
+                            li Close Shaves: $90
+                            li Beard Trims: $90
+                    .col-sm-6
+                        h5 Hours
+                        ul.list-unstyled
+                            li Tuesday-Friday: 9am-6pm
+                            li Saturday: 9am-3pm
+                            li Sunday-Monday: Close
 
     section.container
         .my-5(data-aos="fade")
@@ -118,10 +121,3 @@ block content
                         a(href="mailto:#") example@example.com
                 .col-md-6
                     iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
-
-    section.container
-        h2.page-header Footer
-        ul
-            li All Right Reserved
-            li Designed By: 
-                a(href="http://keypunchers.io/") Keypunchers.io

@@ -1,7 +1,7 @@
 .header {
-    height: 100vh;
+    position: relative;
     background: rgba(0, 0, 0, .2);
-    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.801));
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.9));
 
     .header-bg-image {
         position: relative;
@@ -23,7 +23,8 @@
         width: 100%;
         max-width: 880px;
 
-        span:nth-child(1) {font-size: 4rem; display: block; font-weight: 100;}
-        span:nth-child(2) {font-size: 1.7rem; display:block; font-weight: 300; color: #ccc;}
+        .logo {width: 200px;}
+        .title {font-size: 4rem; display: block; font-weight: 100;}
+        .subtitle {font-size: 1.7rem; display:block; font-weight: 300; color: #ccc;}
     }
 }
