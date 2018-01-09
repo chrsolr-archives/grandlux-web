@@ -1,3 +1,16 @@
+img {
+  -webkit-filter: grayscale(80%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%); }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
 .header {
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
