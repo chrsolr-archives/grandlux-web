@@ -84,36 +84,38 @@ block content
     section.container
         .my-5(data-aos="fade")
             h2.display-4.text-center.text-lowercase.mb-5 Services & Prices
-            ul
-                li Haircut: $60
-                li Fade: $90
+            .row.text-center
+                .col-sm-6
+                    ul.list-unstyled
+                        li Clean Cut: $60
+                        li Close Shaves: $90
+                        li Beard Trims: $90
+                .col-sm-6
+                    ul.list-unstyled
+                        li Tuesday-Friday 9am-6pm
+                        li Saturday: 9am-3pm
+                        li Sunday-Monday: Close
 
     section.container
-        h2.page-header Hours
-        strong Tuesday-Friday 9am-6pm
-        br
-        strong Saturday: 9am-3pm
-        br
-        strong Sunday-Monday: Close
+        .my-5(data-aos="fade")
+            h2.display-4.text-center.text-lowercase.mb-5 Location
+            .row.text-center
+                .col-md-6.align-self-center
+                    address
+                        strong Grand Lux Salon & Barbery
+                        br
+                        span 3616 N Fry Rd #160
+                        br
+                        span Katy, TX 77449
+                        br
+                        abbr(title="Phone") P: (832) 321-3776
 
-    section.container
-        h2.page-header Location
-        address
-            strong Grand Lux Salon & Barbery
-            br
-            span 3616 N Fry Rd #160
-            br
-            span Katy, TX 77449
-            br
-            abbr(title="Phone") P: (832) 321-3776
-
-        address
-            strong Joe Doe
-            br
-            a(href="mailto:#") example@example.com
-    
-    section.container
-        iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
+                    address
+                        strong Joe Doe
+                        br
+                        a(href="mailto:#") example@example.com
+                .col-md-6
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
 
     section.container
         h2.page-header Footer
