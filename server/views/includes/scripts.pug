@@ -2,6 +2,7 @@ script(src="/libs/jquery/dist/jquery.slim.min.js")
 script(src="/libs/popper.js/dist/umd/popper.min.js")
 script(src="/libs/bootstrap/dist/js/bootstrap.min.js")
 script(src='https://use.fontawesome.com/e1cfac341e.js')
+script(src="/libs/magnific-popup/dist/jquery.magnific-popup.min.js")
 script(src="/libs/bootstrap-autohide-navbar/dist/bootstrap-autohide-navbar.min.js")
 script(src="/libs/aos/dist/aos.js")
 script.
@@ -20,5 +21,11 @@ script.
             duration: 300,
             easing: 'ease-in-out',
             delay: 100,
+        });
+
+        $('.gallery-container').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {enabled: true}
         });
     });
