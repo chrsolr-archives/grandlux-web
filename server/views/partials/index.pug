@@ -7,18 +7,13 @@ block content
             filter: grayscale(80%);
         }
 
-    .container-fluid
-        header
-            h2.page-header Header
-            img(src="http://www.thestandardbarbershop.com/wp-content/uploads/2017/04/2-3.jpg", alt="Header image", width="100%")
-            h2 Grand Lux
-            h4 Salon & Barbery
+    header.header
+        .header-bg-image(style="background-image: url(http://www.thestandardbarbershop.com/wp-content/uploads/2017/04/2-3.jpg)")
+        .content
+            span.text-uppercase Grand Lux
+            span Salon & Barbery
 
-            h2.page-header Social Media
-            ul
-                li: a(href="#") Facebook
-                li: a(href="#") Instagram
-                li: a(href="#") Twitter
+    .container-fluid
 
         section.container
             h2.page-header About
@@ -28,20 +23,20 @@ block content
             h2.page-header Team
             .row
                 .col-md-6
-                    .panel.panel-default
-                        .panel-body
-                            img.img-responsive(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
-                            h3: strong Joe Doe
-                            span Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-                        .panel-body
+                    .card
+                        .card-body
+                            img.card-img-top(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
+                            h3.card-title Joe Doe
+                            h6.card-subtitle.mb-2.text-muted 4 Years Experiences
+                            p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
                             a(href="#") View Gallery
                 .col-md-6
-                    .panel.panel-default
-                        .panel-body
-                            img.img-responsive(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
-                            h3: strong Joe Doe
-                            span Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-                        .panel-body
+                    .card
+                        .card-body
+                            img.card-img-top(src="https://media1-production-mightynetworks.imgix.net/asset/1987799/Bertus_Headshot.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format", width="100%")
+                            h3.card-title Joe Doe
+                            h6.card-subtitle.mb-2.text-muted 4 Years Experiences
+                            p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
                             a(href="#") View Gallery
 
         section.container
