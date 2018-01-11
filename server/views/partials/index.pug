@@ -1,4 +1,5 @@
 extends ../layout.pug
+include ../includes/mixins.pug
 
 block content
 
@@ -19,44 +20,23 @@ block content
             h2.display-4.text-center.text-lowercase.mb-5 Team
             .row
                 .col-md-6.mb-5
-                    .media
-                        img.mr-3.rounded-circle(src="https://pbs.twimg.com/media/DRGyLCUWkAIDFZv.jpg", alt="Barber Image", width="100px")
-                        .media-body.align-self-center
-                            h5.mt-0 Joe Doe
-                            p.text-muted.mb-0.small 4 Years Experiences
-                            a.small.mt-0(href="#") Portfolio
-                    .content.mt-2.text-muted
-                        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-                
+                    +profile-card()
                 .col-md-6.mb-5
-                    .media
-                        img.mr-3.rounded-circle(src="https://pbs.twimg.com/media/DRGyLCUWkAIDFZv.jpg", alt="Barber Image", width="100px")
-                        .media-body.align-self-center
-                            h5.mt-0 Joe Doe
-                            p.text-muted.mb-0.small 4 Years Experiences
-                            a.small.mt-0(href="#") Portfolio
-                    .content.mt-2.text-muted
-                        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-                
+                    +profile-card()
                 .col-md-6.mb-5
-                    .media
-                        img.mr-3.rounded-circle(src="https://pbs.twimg.com/media/DRGyLCUWkAIDFZv.jpg", alt="Barber Image", width="100px")
-                        .media-body.align-self-center
-                            h5.mt-0 Joe Doe
-                            p.text-muted.mb-0.small 4 Years Experiences
-                            a.small.mt-0(href="#") Portfolio
-                    .content.mt-2.text-muted
-                        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui minus, est repudiandae. Quisquam officiis error impedit eum deleniti similique sequi excepturi libero praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-                
+                    +profile-card()
                 .col-md-6.mb-5
-                    .media
-                        img.mr-3.rounded-circle(src="https://pbs.twimg.com/media/DRGyLCUWkAIDFZv.jpg", alt="Barber Image", width="100px")
-                        .media-body.align-self-center
-                            h5.mt-0 Joe Doe
-                            p.text-muted.mb-0.small 4 Years Experiences
-                            a.small.mt-0(href="#") Portfolio
-                    .content.mt-2.text-muted
-                        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicperiam voluptatum error debitis fugiat aliqudeleniti sis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
+                    +profile-card()
+            
+            .row
+                .col-md-6.mb-5
+                    +profile-card-alt()
+                .col-md-6.mb-5
+                    +profile-card-alt()
+                .col-md-6.mb-5
+                    +profile-card-alt()
+                .col-md-6.mb-5
+                    +profile-card-alt()
 
     section.container
         .my-5(data-aos="fade")
