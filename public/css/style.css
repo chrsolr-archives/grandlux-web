@@ -15,13 +15,22 @@ img {
     padding-left: 0; }
 
 .vh-25 {
-  height: 25vh; }
+  min-height: 25vh; }
 
 .vh-50 {
-  height: 50vh; }
+  min-height: 50vh; }
 
 .vh-100 {
-  height: 100vh; }
+  min-height: 100vh; }
+
+.vw-25 {
+  min-width: 25vw; }
+
+.vw-50 {
+  min-width: 50vw; }
+
+.vw-100 {
+  min-width: 100vw; }
 
 .sr .reveal {
   visibility: hidden; }
@@ -41,6 +50,9 @@ img {
 .owl-carousel .caption {
   text-align: center; }
 
+html, body {
+  height: 100%; }
+
 .navbar-toggler {
   outline: none; }
 
@@ -48,13 +60,14 @@ img {
   position: relative;
   background: rgba(0, 0, 0, 0.2);
   background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.9));
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
   .header .header-bg-image {
-    position: relative;
+    position: absolute;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     z-index: -1; }
   .header .content {
     position: absolute;
@@ -64,8 +77,7 @@ img {
     text-align: center;
     padding: 0 15px;
     color: #FFFFFF;
-    width: 100%;
-    max-width: 880px; }
+    width: 100%; }
     .header .content .logo {
       width: 200px; }
     .header .content .profile-img {
@@ -81,3 +93,9 @@ img {
       display: block;
       font-weight: 300;
       color: #ccc; }
+  @media (min-width: 768px) {
+    .header {
+      height: 50%; } }
+  @media (max-width: 767px) {
+    .header {
+      height: 80%; } }
