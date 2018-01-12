@@ -20,6 +20,12 @@ img {
 .vh-100 {
   height: 100vh; }
 
+.sr .reveal {
+  visibility: hidden; }
+
+.navbar-toggler {
+  outline: none; }
+
 .header {
   position: relative;
   background: rgba(0, 0, 0, 0.2);

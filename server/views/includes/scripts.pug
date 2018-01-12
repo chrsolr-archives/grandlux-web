@@ -4,7 +4,7 @@ script(src="/libs/bootstrap/dist/js/bootstrap.min.js")
 script(src='https://use.fontawesome.com/e1cfac341e.js')
 script(src="/libs/magnific-popup/dist/jquery.magnific-popup.min.js")
 script(src="/libs/bootstrap-autohide-navbar/dist/bootstrap-autohide-navbar.min.js")
-script(src="/libs/aos/dist/aos.js")
+script(src="/libs/scrollreveal/dist/scrollreveal.min.js")
 script.
     $(function (){
         'use strict';
@@ -16,12 +16,8 @@ script.
             shadow: true
         });
 
-        AOS.init({
-            offset: 200,
-            duration: 300,
-            easing: 'ease-in-out',
-            delay: 50,
-        });
+        window.sr = ScrollReveal();
+        sr.reveal('.reveal');
 
         $('.gallery-container').magnificPopup({
             delegate: 'a',
