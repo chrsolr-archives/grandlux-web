@@ -31,13 +31,21 @@ img {
   position: absolute;
   top: 0; }
 
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center; }
+
+.owl-carousel .caption {
+  text-align: center; }
+
 .navbar-toggler {
   outline: none; }
 
 .header {
   position: relative;
   background: rgba(0, 0, 0, 0.2);
-  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.9)); }
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.9));
+  overflow: hidden; }
   .header .header-bg-image {
     position: relative;
     background-size: cover;
@@ -57,6 +65,10 @@ img {
     max-width: 880px; }
     .header .content .logo {
       width: 200px; }
+    .header .content .profile-img {
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto; }
     .header .content .title {
       font-size: 4rem;
       display: block;
