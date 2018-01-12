@@ -5,8 +5,9 @@ block content
 
     header.header.vh-100
         .header-bg-image(style="background-image: url(https://moviewriternyu.files.wordpress.com/2017/07/barber-shop.jpg)")
+        .dot-matrix
         .content
-            img.logo(src="http://dev.localbarber.nz/wp-content/uploads/2015/11/The-Local-Barbershop-logo-large_grey_mid.png", width="200px")
+            img.logo(src="/assets/images/logo-white.png", width="200px")
             span.title.mt-2.text-uppercase Grand Lux
             span.subtitle Salon & Barbery
 
@@ -27,7 +28,10 @@ block content
                     +profile-card()
                 .col-md-6.mb-5
                     +profile-card()
-            
+        
+    section.container
+        .my-5.reveal
+            h2.display-4.text-center.text-lowercase.mb-5 Team (Alt)
             .row
                 .col-md-6.mb-5
                     +profile-card-alt()
@@ -64,6 +68,7 @@ block content
 
     section.header.vh-50
         .header-bg-image(style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
+        .dot-matrix
         .content
             .my-5.reveal
                 h2.display-4.text-center.text-lowercase.mb-5 Services
@@ -87,6 +92,8 @@ block content
             .row.text-center
                 .col-md-6.align-self-center
                     address
+                        img.justify-content-center.mb-2(src="/assets/images/logo-black.png", width="100px")
+                        br
                         strong Grand Lux Salon & Barbery
                         br
                         span 3616 N Fry Rd #160

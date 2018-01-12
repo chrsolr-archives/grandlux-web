@@ -1,14 +1,14 @@
 img {
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(80%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(80%);
 }
 
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
-
-    > .col,
-    > [class*="col-"] {
+    >.col,
+    >[class*="col-"] {
         padding-right: 0;
         padding-left: 0;
     }
@@ -26,4 +26,15 @@ img {
     height: 100vh;
 }
 
-.sr .reveal { visibility: hidden; }
+.sr .reveal {
+    visibility: hidden;
+}
+
+.dot-matrix {
+    background: url("/assets/images/dot.png");
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
