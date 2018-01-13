@@ -1,4 +1,4 @@
-$brand-color-primary: #CFB53B;
+$brand-color-primary: #04babe;
 
 $theme-colors: (
   "brand-primary": $brand-color-primary,
@@ -6,7 +6,7 @@ $theme-colors: (
   "brand-accent": $brand-color-primary
 );
 
-$bg-brand-gradient: linear-gradient(0deg, transparent, rgba(75, 119, 190, 0.4));
-$bg-brand:  rgba(75, 119, 190, 0.4);
+$bg-brand-gradient: linear-gradient(180deg, transparent, rgba($brand-color-primary, 0.4));
+$bg-brand:  rgba($brand-color-primary, 0.4);
 
 $link-color: $brand-color-primary;
