@@ -3,44 +3,47 @@ include ../includes/mixins.pug
 
 block content
 
-    header.header.vh-100
-        .header-bg-image(style="background-image: url(https://moviewriternyu.files.wordpress.com/2017/07/barber-shop.jpg)")
-        .dot-matrix
-        .content
-            img.logo(src="/assets/images/logo-white.png")
-            span.title.mt-2.text-uppercase Grand Lux
-            span.subtitle Salon & Barbery
+    header(class="header vh-100")
+        div(class="header-bg-image", style="background-image: url(https://moviewriternyu.files.wordpress.com/2017/07/barber-shop.jpg)")
+        div(class="dot-matrix")
+        div(class="content")
+            img(class="logo", src="/assets/images/logo-white.png", alt="Brand Logo Image")
+            span(class="title mt-2 text-uppercase") Grand Lux
+            span(class="subtitle") Salon & Barbery
 
-    section.container
-        .my-5.reveal
-            h2.display-4.text-center.text-lowercase.mb-5.text-brand-primary About
-            p.text-muted.text-center Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, voluptates corrupti accusantium repellat modi voluptatibus aut odio aliquid praesentium. Suscipit, eius nisi quasi et dolore ipsam, enim alias excepturi amet eveniet corporis nihil ab quo voluptatibus molestias, expedita exercitationem quisquam adipisci officiis est nulla. Soluta ducimus sunt dolorum quas dignissimos debitis. Est delectus magni optio quos quis eligendi. Accusantium temporibus, facere facilis dolor sunt tempora nisi commodi provident vel, aspernatur reiciendis omnis vitae unde exercitationem eum consequuntur sequi et doloribus maxime minus ipsam delectus. Itaque nam quaerat et laborum adipisci reprehenderit, magnam quod sunt ipsum libero, atque assumenda quisquam expedita.
+    section(class="bg-body py-5")
+        div(class="container")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-brand-primary mt-0 mb-4") About
+                p(class="text-center text-theme-muted")
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, 
+                    | voluptates corrupti accusantium repellat modi voluptatibus aut 
+                    | odio aliquid praesentium. Suscipit, eius nisi quasi et dolore 
+                    | ipsam, enim alias excepturi amet eveniet corporis nihil ab quo 
+                    | voluptatibus molestias, expedita exercitationem quisquam adipisci 
+                    | officiis est nulla. Soluta ducimus sunt dolorum quas dignissimos 
+                    | debitis. Est delectus magni optio quos quis eligendi. Accusantium 
+                    | temporibus, facere facilis dolor sunt tempora nisi commodi provident 
+                    | vel, aspernatur reiciendis omnis vitae unde exercitationem eum 
+                    | consequuntur sequi et doloribus maxime minus ipsam delectus. 
+                    | Itaque nam quaerat et laborum adipisci reprehenderit, magnam quod 
+                    | sunt ipsum libero, atque assumenda quisquam expedita.
+                div(class="separator-line")
 
-    section.container
-        .my-5.reveal
-            h2.display-4.text-center.text-lowercase.mb-5.text-brand-primary Team
-            .row
-                .col-md-6.mb-5
-                    +profile-card()
-                .col-md-6.mb-5
-                    +profile-card()
-                .col-md-6.mb-5
-                    +profile-card()
-                .col-md-6.mb-5
-                    +profile-card()
-        
-    section.container
-        .my-5.reveal
-            h2.display-4.text-center.text-lowercase.mb-5.text-brand-primary Team (Alt)
-            .row
-                .col-md-6.mb-5
-                    +profile-card-alt()
-                .col-md-6.mb-5
-                    +profile-card-alt()
-                .col-md-6.mb-5
-                    +profile-card-alt()
-                .col-md-6.mb-5
-                    +profile-card-alt()
+    section(class="bg-body-alt py-5")
+        div(class="container")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-brand-primary mt-0 mb-4") Team
+                div(class="row")
+                    div(class="col-md-6")
+                        +profile-card()
+                    div(class="col-md-6")
+                        +profile-card()
+                    div(class="col-md-6")
+                        +profile-card()
+                    div(class="col-md-6")
+                        +profile-card()
+                div(class="separator-line")
 
     section.header
         .header-bg-image(style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")

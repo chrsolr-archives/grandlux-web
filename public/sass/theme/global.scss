@@ -1,5 +1,4 @@
 @import "./partials/_utils";
-
 * {
     outline: none !important;
 }
@@ -59,8 +58,18 @@ img {
 .owl-carousel .owl-stage {
     display: flex;
     align-items: center;
-  }
-  
-  .owl-carousel .caption {
+}
+
+.owl-carousel .caption {
     text-align: center;
-  }
+}
+
+.separator-line {
+    &:before {
+        content: "\268F";
+        color: $brand-color-secondary;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+    }
+}
