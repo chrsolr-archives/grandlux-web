@@ -1,0 +1,12 @@
+$brand-color-primary: #4b77be;
+
+$theme-colors: (
+  "brand-primary": $brand-color-primary,
+  "brand-secondary": $brand-color-primary,
+  "brand-accent": $brand-color-primary
+);
+
+$bg-brand-gradient: linear-gradient(0deg, transparent, rgba(75, 119, 190, 0.4));
+$bg-brand:  rgba(75, 119, 190, 0.4);
+
+$link-color: $brand-color-primary;
