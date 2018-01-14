@@ -1,4 +1,4 @@
-$brand-color-primary: #2a2a2a;
+$brand-color-primary: #af8c45;
 $brand-color-secondary: darken($brand-color-primary, 10%);
 $bg-color: white;
 $bg-color-alt: darken($bg-color, 5%);
@@ -17,7 +17,3 @@ $bg-brand:  rgba($brand-color-primary, 0.4);
 
 $link-color: $brand-color-primary;
 $body-bg: $bg-color;
-
-.text-theme-muted {
-  color: #afafaf !important;
-}
