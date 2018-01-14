@@ -15,7 +15,7 @@ block content
         div(class="container")
             div(class="reveal")
                 p(class="display-4 text-lowercase font-weight-light text-center text-brand-primary mt-0 mb-4") About
-                p(class="text-center text-theme-muted")
+                p(class="text-center text-muted")
                     | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, 
                     | voluptates corrupti accusantium repellat modi voluptatibus aut 
                     | odio aliquid praesentium. Suscipit, eius nisi quasi et dolore 
@@ -45,85 +45,106 @@ block content
                         +profile-card()
                 div(class="separator-line")
 
-    section.header
-        .header-bg-image(style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
-        .dot-matrix
-        .content
-            .my-5.reveal
-                h2.display-4.text-center.text-lowercase.mb-5 Testimonials
-                .owl-carousel.owl-theme
-                    .item.container
-                        img.profile-img.rounded-circle(src="https://atomicbarber.co/wp-content/uploads/2017/06/Jordan_Atomic_Barber_Co_580.jpg", alt="Barber Image")
-                        h3.text-center.my-2 Joe Smith
-                        p.font-italic Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dolorem ipsam minus aliquam doloremque recusandae quisquam, error tenetur fugit esse officia laborum non? Itaque voluptatibus ea corrupti quam beatae? Aperiam ipsa in magnam ex nemo perspiciatis suscipit eos, rerum autem ea repudiandae quis cupiditate veritatis. Sequi provident ullam quisquam. Ipsum.
-                    .item.container
-                        img.profile-img.rounded-circle(src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Image")
-                        h3.text-center.my-2 Dave Anderson 
-                        p.font-italic Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dolorem ipsam minus aliquam doloremque recusandae quisquam, error tenetur fugit esse officia laborum non? Itaque voluptatibus ea corrupti quam beatae? Aperiam ipsa in magnam ex nemo perspiciatis suscipit eos, rerum autem ea repudiandae quis cupiditate veritatis. Sequi provident ullam quisquam. Ipsum.
+    section(class="header")
+        div(class="header-bg-image", style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
+        div(class="dot-matrix")
+        div(class="content py-5")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-light mt-0 mb-4") Testimonials
+                div(class="owl-carousel owl-theme")
+                    div(class="item container")
+                        img(class="profile-img rounded-circle", src="https://atomicbarber.co/wp-content/uploads/2017/06/Jordan_Atomic_Barber_Co_580.jpg", alt="Barber Image")
+                        h4(class="card-title font-weight-light") Joe Smith
+                        p(class="card-text font-italic") 
+                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            | Qui dolorem ipsam minus aliquam doloremque recusandae 
+                            | quisquam, error tenetur fugit esse officia laborum non? 
+                            | Itaque voluptatibus ea corrupti quam beatae? Aperiam 
+                            | ipsa in magnam ex nemo perspiciatis suscipit eos, 
+                            | rerum autem ea repudiandae quis cupiditate veritatis. 
+                            | Sequi provident ullam quisquam. Ipsum.
+                    div(class="item container")
+                        img(class="profile-img rounded-circle", src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Image")
+                        h4(class="card-title font-weight-light") Dave Anderson 
+                        p(class="card-text font-italic") 
+                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            | Qui dolorem ipsam minus aliquam doloremque recusandae 
+                            | quisquam, error tenetur fugit esse officia laborum non? 
+                            | Itaque voluptatibus ea corrupti quam beatae? Aperiam 
+                            | ipsa in magnam ex nemo perspiciatis suscipit eos, 
+                            | rerum autem ea repudiandae quis cupiditate veritatis. 
+                            | Sequi provident ullam quisquam. Ipsum.
+                div(class="separator-line")
 
-    section.container
-        .my-5.reveal
-            h2.display-4.text-center.text-lowercase.mb-5.text-brand-primary Gallery
-            .gallery-container
-                .row.no-gutters
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg", data-mfp-src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
-                            img.img-fluid(src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
-                            img.img-fluid(src="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://i1.wp.com/therighthairstyles.com/wp-content/uploads/2014/05/3-low-fade-with-facial-hairstyle.jpg?w=500&ssl=1")
-                            img.img-fluid(src="https://i1.wp.com/therighthairstyles.com/wp-content/uploads/2014/05/3-low-fade-with-facial-hairstyle.jpg?w=500&ssl=1")
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
-                            img.img-fluid(src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
-                            img.img-fluid(src="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
-                    .col-md-4.col-sm-6.col-6
-                        a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
-                            img.img-fluid(src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+    section(class="bg-body py-5")
+        div(class="container")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-brand-primary mt-0 mb-4") Gallery
+                div(class="gallery-container")
+                    div(class="row justify-content-center no-gutters")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg", data-mfp-src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                                img(class="img-fluid", src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
+                                img(class="img-fluid", src="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://i1.wp.com/therighthairstyles.com/wp-content/uploads/2014/05/3-low-fade-with-facial-hairstyle.jpg?w=500&ssl=1")
+                                img(class="img-fluid", src="https://i1.wp.com/therighthairstyles.com/wp-content/uploads/2014/05/3-low-fade-with-facial-hairstyle.jpg?w=500&ssl=1")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                                img(class="img-fluid", src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
+                                img(class="img-fluid", src="https://i.pinimg.com/originals/ae/c7/41/aec741b7b301c14fb05d13fac15491d7.jpg")
+                        div(class="col-md-3 col-sm-4 col-6")
+                            a(href="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                                img(class="img-fluid", src="https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Barber-Shop-Haircuts-Mid-Taper-Fade-with-Loose-Side-Part.jpg")
+                div(class="separator-line")
 
-    section.header.vh-50
-        .header-bg-image(style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
-        .dot-matrix
-        .content
-            .my-5.reveal
-                h2.display-4.text-center.text-lowercase.mb-5 Services
-                .row.text-center
-                    .col-sm-6
+    section(class="header")
+        div(class="header-bg-image", style="background-image: url(http://robinsbarbershop.com/images/the-shop.jpg)")
+        div(class="dot-matrix")
+        div(class="content py-5")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-light mt-0 mb-4") Services
+                div(class="row text-center")
+                    div(class="col-sm-6")
                         h5 Prices
-                        ul.list-unstyled
+                        ul(class="list-unstyled")
                             li Clean Cut: $60
                             li Close Shaves: $90
                             li Beard Trims: $90
-                    .col-sm-6
+                    div(class="col-sm-6")
                         h5 Hours
-                        ul.list-unstyled
+                        ul(class="list-unstyled")
                             li Tuesday-Friday: 9am-6pm
                             li Saturday: 9am-3pm
                             li Sunday-Monday: Close
+                div(class="separator-line")
 
-    section.container
-        .my-5.reveal
-            h2.display-4.text-center.text-lowercase.mb-5.text-brand-primary Location
-            .row.text-center
-                .col-md-6.align-self-center
-                    address
-                        img.justify-content-center.mb-2(src="/assets/images/logo-black.png", width="100px")
-                        br
-                        strong Grand Lux Salon & Barbery
-                        br
-                        span 3616 N Fry Rd #160
-                        br
-                        span Katy, TX 77449
-                        br
-                        abbr(title="Phone") P: (832) 321-3776
+    section(class="bg-body-alt py-5")
+        div(class="container")
+            div(class="reveal")
+                p(class="display-4 text-lowercase font-weight-light text-center text-brand-primary mt-0 mb-4") Location
+                div(class="row text-center")
+                    div(class="col-md-6 align-self-center")
+                        address
+                            img(class="justify-content-center mb-3", src="/assets/images/logo-black.png", width="100px")
+                            br
+                            strong Grand Lux Salon & Barbery
+                            br
+                            span 3616 N Fry Rd #160
+                            br
+                            span Katy, TX 77449
+                            br
+                            abbr(title="Phone") P:
+                            span  (832) 321-3776
 
-                    address
-                        strong Joe Doe
-                        br
-                        a(href="mailto:#") example@example.com
-                .col-md-6
-                    iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
+                        address
+                            strong Joe Doe
+                            br
+                            a(href="mailto:#") example@example.com
+                    div(class="col-md-6")
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13845.45590875771!2d-95.7193806!3d29.824914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4582e8721beeeac2!2sGrand+Lux+Salon+and+Barbery!5e0!3m2!1sen!2sus!4v1515335057324", width="100%", height="300", frameborder="0", style="border:0", allowfullscreen)
+                div(class="separator-line")

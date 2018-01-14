@@ -1,6 +1,10 @@
 @import "./partials/_utils";
 * {
     outline: none !important;
+
+    &:active, &:focus, &:hover {
+        outline: none !important;
+    }
 }
 
 img {

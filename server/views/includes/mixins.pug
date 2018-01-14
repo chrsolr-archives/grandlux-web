@@ -1,18 +1,23 @@
-mixin profile-card-alt(profile)
-    .media
-        img.mr-3.rounded-circle(src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Image", width="100px")
-        .media-body.align-self-center
-            h5.mt-0 Joe Doe
-            p.text-muted.mb-0.small 4 Years Experiences
-            a.small.mt-0(href="#") Portfolio
-    .content.mt-2.text-muted
-        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
-
 mixin profile-card(profile)
-    .card.text-center.border-0.bg-transparent
-        img.mr-3.rounded-circle.align-self-center(src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Image", width="150px")
-        .card-body
-            h4.mt-0.card-title Joe Doe
-            p.text-muted.mb-0.card-subtitle 4 Years Experiences
-            a.small.mt-0.mb-2(href="#") Portfolio
-            p.card-text.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
+    div(class="card text-center border-0 bg-transparent")
+        img(class="rounded-circle align-self-center", src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Profile Image", width="150px")
+        div(class="card-body")
+            h4(class="card-title font-weight-light") Joe Doe
+            p(class="card-subtitle text-muted small") 4 Years Experiences
+            a(class="small", href="#") Portfolio
+            p(class="card-text text-muted") 
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                | A reprehenderit pariatur rerum sit omnis perferendis quisquam, 
+                | aperiam voluptatum error debitis fugiat aliquam qui praesentium, 
+                | perspiciatis sapiente aspernatur optio maiores assumenda numquam 
+                | quae nam ad. Numquam, autem blanditiis.
+
+//- mixin profile-card-alt(profile)
+//-     .media
+//-         img.mr-3.rounded-circle(src="https://v6pw16hluq-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/barber-gallery-7.jpg", alt="Barber Image", width="100px")
+//-         .media-body.align-self-center
+//-             h5.mt-0 Joe Doe
+//-             p.text-muted.mb-0.small 4 Years Experiences
+//-             a.small.mt-0(href="#") Portfolio
+//-     .content.mt-2.text-muted
+//-         p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit pariatur rerum sit omnis perferendis quisquam, aperiam voluptatum error debitis fugiat aliquam qui praesentium, perspiciatis sapiente aspernatur optio maiores assumenda numquam quae nam ad. Numquam, autem blanditiis.
