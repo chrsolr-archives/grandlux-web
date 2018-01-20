@@ -1,6 +1,3 @@
-.text-theme-muted {
-  color: #afafaf !important; }
-
 * {
   outline: none !important; }
   *:active, *:focus, *:hover {
@@ -63,9 +60,6 @@ img {
 
 html, body {
   height: 100%; }
-
-.text-theme-muted {
-  color: #afafaf !important; }
 
 .navbar {
   min-height: 80px; }
